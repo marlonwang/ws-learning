@@ -1,0 +1,5 @@
+net\logvv\jaxws\common\ScheduleService.class
+net\logvv\jaxws\ws\SmsServceImpl.class
+net\logvv\jaxws\ws\SmsService.class
+net\logvv\jaxws\ws\SmsServiceWS.class
+net\logvv\jaxws\App.class

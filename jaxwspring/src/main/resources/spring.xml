@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<!-- 注解自动扫描 -->
+	<context:component-scan base-package="net.logvv.jaxws" />
+	
+<!-- 
+	<bean id="springContextHolder" class="net.logvv.raven.common.spring.SpringContextHolder" lazy-init="false"/>
+-->
+	
+	<!-- 将多个配置文件读取到容器中，交给Spring管理 -->
+<!-- 
+	<bean id="propertyConfigurer" class="net.logvv.raven.common.spring.DecryptPropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>application.properties</value>
+				<value>config.properties</value>
+				<value>redis.properties</value>
+				<value>email.properties</value>
+			</list>
+		</property>
+	</bean>
+-->
+
+	<!-- 导入spring-jaxws.xml -->
+	<import resource="spring-jaxws.xml"/>
+	
+</beans>
